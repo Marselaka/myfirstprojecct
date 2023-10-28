@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <label for="username">Имя пользователя:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+        <br>
+
+        <label for="confirm-password">Подтверждение пароля:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <br>
+
+        <label for="born">Дата рождения:</label>
+        <input type="date" id="born" name="born">
+        <br>
+
+        <label>Пол:</label>
+        <input type="radio" id="male" name="gender" value="Мужской">
+        <label for="male">Мужской</label>
+        <input type="radio" id="female" name="gender" value="Женский">
+        <label for="female">Женский</label>
+        <input type="radio" id="other" name="gender" value="Другой">
+        <label for="other">Другой</label>
+        <br>
+
+        <label for="about">О себе:</label>
+        <textarea id="about" name="about"></textarea>
+        <br>
+
+        <label for="favorite-color">Выбор любимого цвета:</label>
+        <select id="favorite-color" name="favorite-color">
+            <option value="red">Красный</option>
+            <option value="blue">Синий</option>
+            <option value="green">Зеленый</option>
+        </select>
+        <br>
+
+        <p><input onclick="window.location.href = 'page2.html';" type="submit" value="Войти">
+    </form>
+</body>
+</html>
